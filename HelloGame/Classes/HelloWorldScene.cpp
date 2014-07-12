@@ -54,7 +54,7 @@ bool HelloWorld::init()
     // add a label shows "Hello World"
     // create and initialize a label
     
-    auto label = LabelTTF::create("Hello World", "Arial", 24);
+    auto label = LabelTTF::create("Hello Beatrobo!", "Arial", 24);
     
     // position the label on the center of the screen
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
@@ -62,15 +62,43 @@ bool HelloWorld::init()
 
     // add the label as a child to this layer
     this->addChild(label, 1);
-
-    // add "HelloWorld" splash screen"
-    auto sprite = Sprite::create("HelloWorld.png");
-
-    // position the sprite on the center of the screen
-    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-
-    // add the sprite as a child to this layer
-    this->addChild(sprite, 0);
+    
+    // add robot
+    auto robotSprite = Sprite::create();
+    robotSprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    this->addChild(robotSprite, 0);
+    
+    auto leftLegSprite = Sprite::create("hide_leg.png");
+    leftLegSprite->setPosition(Vec2(5, leftLegSprite->getContentSize().height/2 + 0));
+    robotSprite->addChild(leftLegSprite, 1);
+    
+    auto rightLegSprite = Sprite::create("hide_leg.png");
+    rightLegSprite->setPosition(Vec2(-5, rightLegSprite->getContentSize().height/2 + 0));
+    robotSprite->addChild(rightLegSprite, 1);
+    
+    auto bodySprite = Sprite::create("hide_body.png");
+    bodySprite->setPosition(Vec2(0, bodySprite->getContentSize().height/2 + 16));
+    robotSprite->addChild(bodySprite, 3);
+    
+    auto leftArmSprite = Sprite::create("hide_arm.png");
+    leftArmSprite->setPosition(Vec2(17, leftArmSprite->getContentSize().height/2 + 6));
+    robotSprite->addChild(leftArmSprite, 4);
+    
+    auto rightArmSprite = Sprite::create("hide_arm.png");
+    rightArmSprite->setPosition(Vec2(-17, rightArmSprite->getContentSize().height/2 + 6));
+    robotSprite->addChild(rightArmSprite, 4);
+    
+    auto headSprite = Sprite::create("hide_head.png");
+    headSprite->setPosition(Vec2(0, headSprite->getContentSize().height/2 + 50));
+    robotSprite->addChild(headSprite, 6);
+    
+    auto leftHeadphoneSprite = Sprite::create("headphone_left.png");
+    leftHeadphoneSprite->setPosition(Vec2(30, leftHeadphoneSprite->getContentSize().height/2 + 55));
+    robotSprite->addChild(leftHeadphoneSprite, 5);
+    
+    auto rightHeadphoneSprite = Sprite::create("headphone_right.png");
+    rightHeadphoneSprite->setPosition(Vec2(-15, rightHeadphoneSprite->getContentSize().height/2 + 55));
+    robotSprite->addChild(rightHeadphoneSprite, 7);
     
     return true;
 }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08F133FA1970D57300B774FD /* hide_arm.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F133F61970D57300B774FD /* hide_arm.png */; };
+		08F133FB1970D57300B774FD /* hide_body.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F133F71970D57300B774FD /* hide_body.png */; };
+		08F133FC1970D57300B774FD /* hide_head.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F133F81970D57300B774FD /* hide_head.png */; };
+		08F133FD1970D57300B774FD /* hide_leg.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F133F91970D57300B774FD /* hide_leg.png */; };
+		08F134001970D57B00B774FD /* headphone_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F133FE1970D57B00B774FD /* headphone_left.png */; };
+		08F134011970D57B00B774FD /* headphone_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F133FF1970D57B00B774FD /* headphone_right.png */; };
+		08F134031970D58600B774FD /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 08F134021970D58600B774FD /* shadow.png */; };
 		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
 		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
 		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
@@ -215,6 +222,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08F133F61970D57300B774FD /* hide_arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hide_arm.png; sourceTree = "<group>"; };
+		08F133F71970D57300B774FD /* hide_body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hide_body.png; sourceTree = "<group>"; };
+		08F133F81970D57300B774FD /* hide_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hide_head.png; sourceTree = "<group>"; };
+		08F133F91970D57300B774FD /* hide_leg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hide_leg.png; sourceTree = "<group>"; };
+		08F133FE1970D57B00B774FD /* headphone_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphone_left.png; sourceTree = "<group>"; };
+		08F133FF1970D57B00B774FD /* headphone_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphone_right.png; sourceTree = "<group>"; };
+		08F134021970D58600B774FD /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -455,6 +469,13 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				08F134021970D58600B774FD /* shadow.png */,
+				08F133FE1970D57B00B774FD /* headphone_left.png */,
+				08F133FF1970D57B00B774FD /* headphone_right.png */,
+				08F133F61970D57300B774FD /* hide_arm.png */,
+				08F133F71970D57300B774FD /* hide_body.png */,
+				08F133F81970D57300B774FD /* hide_head.png */,
+				08F133F91970D57300B774FD /* hide_leg.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -629,7 +650,9 @@
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
+				08F134011970D57B00B774FD /* headphone_right.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				08F134001970D57B00B774FD /* headphone_left.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
@@ -642,10 +665,15 @@
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
+				08F133FB1970D57300B774FD /* hide_body.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				08F133FA1970D57300B774FD /* hide_arm.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				08F133FD1970D57300B774FD /* hide_leg.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
+				08F134031970D58600B774FD /* shadow.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
+				08F133FC1970D57300B774FD /* hide_head.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
